@@ -1,0 +1,27 @@
+---
+title: "first_website"
+---
+
+```{r}
+library(tidyverse)
+library(ggthemes)
+library(ggplot2)
+library(dplyr)
+```
+
+```{r}
+#| output: false 
+#| #| echo: false
+
+mtcars |> 
+  select(mpg, wt) |>
+  ggplot(aes(x = wt, y = mpg)) + 
+  geom_smooth(method = "lm", formula = y ~ x, se = FALSE) + 
+  theme_clean() +
+  labs()
+
+```
+
+\>
+
+![]()
