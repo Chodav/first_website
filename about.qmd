@@ -2,8 +2,35 @@
 title: "About"
 ---
 
-About this site
+## About Me
 
-```{r}
-1 + 1
-```
+**\<Insert name\>**
+
+Insert personal information (i.e., education, passions/interest, etc.)
+
+## About the Project
+
+*The title of My Project* explores...
+
+### Goals
+
+Another section
+
+-   Bullet 1
+
+-   Bullet 2
+
+    -   subtext?
+
+Numbered List:
+
+1.  Item 1
+2.  Item 2
+
+"This is data science"
+\
+Dave
+What about this line break?
+\
+Hyperlink: [youtube](https://youtube.com)
+
