@@ -8,7 +8,22 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: sources.qmd
+        text: Sources
+  
+  sources:
+    - id: interactive
+      title: "Interactive Pages"
+      style: "floating"
+      background: "#ffffff"
+      collapse-level: 3
+      contents: 
+        - plane-passengers.qmd
+        - map-london.qmd
+        - plotly.qmd
 
+
+    
 format:
   html:
     theme: cosmo
@@ -16,4 +31,3 @@ format:
     toc: true
 
 editor: visual
-

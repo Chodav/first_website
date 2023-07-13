@@ -4,24 +4,25 @@ title: "first_website"
 
 ```{r}
 library(tidyverse)
-library(ggthemes)
+#library(ggthemes)
 library(ggplot2)
 library(dplyr)
+library(knitr)
+library(readr)
 ```
 
 ```{r}
 #| output: false 
 #| #| echo: false
 
-mtcars |> 
-  select(mpg, wt) |>
-  ggplot(aes(x = wt, y = mpg)) + 
-  geom_smooth(method = "lm", formula = y ~ x, se = FALSE) + 
-  theme_clean() +
-  labs()
+car_plot <- read_rds(file = "car-plot.rds")
 
+ggsave("car-plot.png", car_plot)
 ```
 
-\>
+```{r}
+include_graphics("images/car-plot.png")
+# Made image with include_graphics with an rds object
+```
 
 ![]()
